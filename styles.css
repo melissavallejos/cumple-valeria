@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Disney+Heroic+Italic&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.titulo {
+    color: purple;
+    margin-top: 20px; /* Ajustar según sea necesario */
+}
+
+.player-title,
+.player-title + p,
+.hora {
+    color: rgb(136, 108, 159);
+}
+
+
+
+
+.invitation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 104, 245, 0.8);
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.animated-text {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+.valeria1 {
+    width: 100%; /* Ajustar el ancho según sea necesario */
+    height: auto; /* Para mantener la proporción */
+}
+
+.confirmation-message {
+    font-family: 'Disney Heroic Italic', sans-serif;
+    color: rgb(201, 44, 253);
+    font-size: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.confirmation-button {
+    background-color: rgb(255, 104, 245);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.confirmation-button:hover {
+    background-color: #ff69b4;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(143, 45, 241, 0.9);
+    color: 
+    text-align: center;
+    padding: 0.05rem 0;
+    margin-top: 20px; /* Añade margen superior para separar del botón */
+}
+
+.footer-paragraph {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0; /* Elimina cualquier margen por defecto que pueda afectar el centrado */
+    padding: 10px 0; /* Añade un espacio alrededor del texto si es necesario */
+}
+
+@media (max-width: 768px) {
+    .invitation {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .confirmation-message {
+        font-size: 18px;
+    }
+
+    .confirmation-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .valeria1 {
+        width: 80%; /* Ajustar el ancho según sea necesario */
+    }
+}
